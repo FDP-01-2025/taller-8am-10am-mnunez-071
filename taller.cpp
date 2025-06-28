@@ -103,9 +103,6 @@ void eliminarEstudiante() {
 if (archivo.is_open() && temp.is_open()) {
         while (archivo >> e.nombre >> e.carnet >> e.edad) {
             if (e.carnet == buscado) {
-
-   
-
                 eliminado = true;
             } else {
                 temp << e.nombre << " " << e.carnet << " " << e.edad << endl;
@@ -123,9 +120,7 @@ if (archivo.is_open() && temp.is_open()) {
     } else {
         cout << "Error abriendo los archivos.\n";
     }
-    // Escribe aquí la función que elimine un estudiante por su carnet.
-    // Puedes usar o no el manejo de archivos.
-    // Si lo haces con archivos, ganarás **2 puntos extra**.
+    
 }
 // -----------------------------
 
